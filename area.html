@@ -3,41 +3,65 @@
 <head>
     <title>Cylinder Surface Area Calculator</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
         }
 
         .calculator-container {
             text-align: center;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #2d2d2d;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+            width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffcc00;
         }
 
         button {
-            margin: 5px;
-            padding: 10px 20px;
+            margin: 8px;
+            padding: 12px 25px;
             font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background: #ffcc00;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ffaa00;
+            transform: scale(1.05);
         }
 
         #dimensions, #results {
             margin-top: 20px;
             padding: 15px;
-            border: 1px solid #ccc;
-            width: 320px;
-            background-color: #f1f1f1;
+            border-radius: 10px;
+            background-color: #3c3c3c;
+            width: 340px;
             margin-left: auto;
             margin-right: auto;
             text-align: left;
+            font-size: 15px;
+            line-height: 1.5;
         }
     </style>
     <script>
